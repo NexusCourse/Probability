@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
-
-
-
 *{
     padding: 0;
     margin: 0;
@@ -509,6 +506,30 @@ a:hover{
 }
 
 
+/* Ahora para el scroll de recursos*/
+.scroller {
+    display: flex;
+    gap: 10px;
+    animation: scroll 25s linear infinite;
+    animation-delay: calc(25s / -1);
+}
+
+.scroller:nth-child(2) {
+    animation: scroll2 25s linear infinite;
+    animation-delay: calc(25s / -2);
+}
+
+.item {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 7px;
+    box-shadow: rgba(255, 255, 255, 0.192) 0px 0px 15px;
+}
+
 /**/
 
 @media (width < 900px){
@@ -547,5 +568,24 @@ a:hover{
 
     footer{
         grid-template-columns: 1fr 150px;
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
     }
 }
