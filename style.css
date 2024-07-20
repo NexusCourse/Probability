@@ -20,13 +20,13 @@ a{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #081007; /* color del fondo  #18181B */
+    background-color: #081007; /* color del fondo  #18181B  081007*/
     
 }
 
 nav{
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #21411b; /* Color posiconamiento sobre link*/
+    background-color: #616a39; /* Color posiconamiento sobre link*/
     transition: all 0.3s ease;
 }
 
@@ -70,25 +70,26 @@ nav{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #21411b;
+    background-color: #616a39;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover{
-    background-color: #21651b;
+    background-color: #707c3f;
+    color: #fff;
 }
 
 .container{
     max-width: 1200px;
     margin: auto;
-    padding: 5rem 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .blur{
     position: absolute;
-    box-shadow: 0 0 1000px 50px #21801b;
+    box-shadow: 0 0 1000px 50px #616a39;
     z-index: -100;
 }
 
@@ -134,7 +135,7 @@ header .image{
 
 header .image img{
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 section .header{
@@ -168,7 +169,7 @@ section .header{
 
 .features .card span{
     display: inline-block;
-    background-color: #21411b;
+    background-color: #616a39;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -199,14 +200,14 @@ section .header{
 
 .sub-header{
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     color: #ccc;
 }
 
 .sub-header2{
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
     text-align: justify;
     color: #ccc;
 }
@@ -272,8 +273,8 @@ section .header{
 }
 
 .temario .card button:hover{
-    background-color: #21411b;
-    border-color: #21411b;
+    background-color: #616a39;
+    border-color: #616a39;
 }
 
 footer{
@@ -310,8 +311,8 @@ footer .column .socials a{
 
 footer .column .socials a:hover{
     color: #fff;
-    background-color: #21411b;
-    border-color: #21411b;
+    background-color: #616a39;
+    border-color: #616a39;
 }
 
 footer .column h4{
@@ -334,7 +335,7 @@ footer .column > a:hover{
 
 .copyright{
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 1rem;
     color: #fff;
     font-size: 0.8rem;
@@ -345,8 +346,8 @@ footer .column > a:hover{
 /* Aqui sigue el codigo para el cu1*/
 section .header2 {
     margin: 0 auto;
-    background-color: #232a21;
-    color: darkolivegreen;
+    background-color: #616a39;
+    color: beige;
     width: 550px;
     border-radius: 1rem;
     text-align: center;
@@ -355,9 +356,10 @@ section .header2 {
 }
 .center{
     text-align: center;
-    background-color: #71796e;
+    backdrop-filter: blur(0.1rem);
+    -webkit-backdrop-filter: blur(0.1rem);
     border-radius: 5px;
-    width: 200px;
+    width: 220px;
     padding: auto;
     margin: 0.8rem auto;
     
@@ -367,7 +369,6 @@ section .header2 {
     margin: 0 auto;
     color: #ccc;
     border-radius: 20px;
-    background-color: #081007;
 }
 
 section article{
@@ -392,8 +393,8 @@ section article h2 , p {
 .titulo2{
     font-size: 14pt;
  text-align: center;
- background-color:#4a5147;
- color: white;
+ background-color:#616a39;
+ color: beige;
  border-radius: 7px;
 }
 
@@ -505,13 +506,20 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.centerpdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+
 
 /* Ahora para el scroll de recursos*/
 .scroller {
     display: flex;
     gap: 10px;
     animation: scroll 25s linear infinite;
-    animation-delay: calc(25s / -1);
+    animation-delay: calc(25s / -1) ;
 }
 
 .scroller:nth-child(2) {
