@@ -28,7 +28,7 @@ Puedes encontrar nuestro contenido en GitHub:
 
 ## 🌎 Un Vistazo a Nuestra Plataforma
 
-![Home Preview](images/home.png)
+![Home Preview](https://prod-files-secure.s3.us-west-2.amazonaws.com/a095f69c-3ae4-405b-97fb-4e9b4df49627/cd4fc8bd-75b6-4a40-9974-d6cc82ce4b67/Untitled.png)
 
 Nos esforzamos por crear una comunidad inclusiva y colaborativa, comprometida con el aprendizaje y el desarrollo académico. ¡Únete a nosotros y explora el mundo de la probabilidad de una manera amigable y accesible!
 

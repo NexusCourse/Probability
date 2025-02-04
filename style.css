@@ -134,7 +134,7 @@ header .image{
 
 
 header .image img{
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
@@ -346,7 +346,7 @@ footer .column > a:hover{
 /* Aqui sigue el codigo para el cu1*/
 section .header2 {
     margin: 0 auto;
-    background-color: #616a39;
+    background-color: #323916;
     color: beige;
     width: 550px;
     border-radius: 1rem;
@@ -359,7 +359,7 @@ section .header2 {
     backdrop-filter: blur(0.1rem);
     -webkit-backdrop-filter: blur(0.1rem);
     border-radius: 5px;
-    width: 220px;
+    width: 290px;
     padding: auto;
     margin: 0.8rem auto;
     
@@ -393,7 +393,7 @@ section article h2 , p {
 .titulo2{
     font-size: 14pt;
  text-align: center;
- background-color:#616a39;
+ background-color:#323916;
  color: beige;
  border-radius: 7px;
 }
