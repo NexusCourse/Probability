@@ -1,0 +1,146 @@
+% *** LANGUAGE PACKAGES ***
+\usepackage[spanish, mexico]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}		% Great font
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[style=spanish]{csquotes}
+
+% *** GEOMETRY PACKAGES ***
+\usepackage{geometry}
+\geometry{
+  a4paper,  % Cambiar a tamaño Letter
+  left=30mm,
+  right=30mm,
+  top=40mm,
+  bottom=35mm,
+  headheight=40mm
+}
+
+% *** GRAPHICS RELATED PACKAGES ***
+\usepackage{graphicx}       % Loading images
+
+
+% *** TABLE PACKAGES ***
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+%%% EQUATIONS %%%
+\usepackage{mathtools}
+
+% *** REFERENCES ***
+\usepackage{perpage}
+\MakePerPage{footnote}
+\usepackage{footnote}
+\usepackage[colorlinks,
+citecolor=cyan,
+urlcolor=blue,
+linkcolor=blue,
+citebordercolor={0 0 1},
+urlbordercolor={0 1 1},
+linktocpage,
+hyperfootnotes=true
+]{hyperref}
+
+% *** COLOR PACKAGES ***
+\usepackage{xcolor}		
+% Color definitiions
+% Definición de colores con tonos verdes
+\definecolor{green1}{RGB}{34,139,34}   % Verde oscuro (Forest Green)
+\definecolor{green2}{RGB}{144,238,144} % Verde claro (Light Green)
+\definecolor{gray2}{RGB}{245,245,245}  % Gris muy claro como fondo (casi blanco)
+
+%definecolor{blue2}{RGB}{10,62,157}
+%\definecolor{red2}{RGB}{173,17,0}
+%\definecolor{gray2}{RGB}{240,240,240}
+%
+
+%\usepackage[bindingoffset=0.0cm,vcentering=true,%
+%top=2.8cm,
+%bottom=3cm,
+%left=2.54cm,
+%right=2.54cm,
+%headsep=0.75cm,
+%headheight=35pt,
+%footskip=2cm,
+%marginparwidth=4cm,
+%%showframe,
+%]{geometry} %showframe para ver los margins
+
+
+\usepackage{listings}
+\lstset{ % Configuración general para listar código
+    language={Python},                     % Lenguaje del código
+    basicstyle=\small\ttfamily,            % Estilo básico del texto (monoespaciado)
+    numbers= left,                          % Números de línea a la izquierda
+    numberstyle=\tiny\color{black},       % Estilo de los números de línea en verde claro
+    frame=tb,                              % Marco arriba y abajo
+    tabsize=4,                             % Tamaño de tabulación
+    columns=fixed,                         % Espaciado fijo entre columnas
+    showstringspaces=false,                % No mostrar espacios en cadenas de texto
+    showtabs=false,                        % No mostrar tabulaciones
+    keepspaces=true,                       % Mantener los espacios en el código
+    backgroundcolor=\color{gray2},         % Fondo en gris claro
+    commentstyle=\color{green1}\itshape,   % Comentarios en verde oscuro e itálicas
+    keywordstyle=\color{green2}\bfseries,  % Palabras clave en verde claro y negritas
+    stringstyle=\color{green1},            % Cadenas de texto en verde oscuro
+    breaklines = true,
+    captionpos = b,
+    keepspaces = true,
+    showspaces = false,
+    showstringspaces = false,
+    showtabs = false,
+    tabsize = 2
+}
+\usepackage{inconsolata} % Type font for \verb text
+\usepackage{showexpl} % Para hacer ejemplos en LaTeX
+\setlength{\parindent}{0cm}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tcolorbox}   % Paquete para crear cajas de colores 
+
+
+% Configuración de tcolorbox
+\tcolorboxenvironment{theorem}{  % Configuración para el entorno de teorema
+    colback=gray!40, % Fondo gris claro
+    colframe=black,  % Borde negro
+    coltitle=black,  % Color del título
+    boxrule=0.8pt,   % Grosor del borde
+    rounded corners,   % Esquinas rectas
+    fonttitle=\bfseries % Título en negritas
+}
+
+% Definición del entorno de teorema
+\newtheorem{theorem}{Teorema}
+
+
+% Configuración de tcolorbox para definiciones
+\tcolorboxenvironment{definition}{  % Configuración para el entorno de definición
+    colback=gray!10,    % Fondo gris claro
+    colframe=black,     % Borde negro
+    coltitle= green1,    % Color del título verde
+    boxrule=0.8pt,      % Grosor del borde
+    rounded corners,    % Esquinas redondeadas
+    fonttitle=\bfseries % Título en negritas
+}
+
+% Definición del entorno de definición
+\newtheorem{definition}{Definición}
+
+
+
+\tcolorboxenvironment{example}{  % Configuración para el entorno de definición
+    colback= white,    % Fondo gris claro
+    colframe= gray,     % Borde negro
+    coltitle= green1,    % Color del título verde
+    boxrule=0.8pt,      % Grosor del borde
+    sharp corners,    % Esquinas redondeadas
+    fonttitle=\bfseries % Título en negritas
+}
+
+% Definición del entorno de definición
+\newtheorem{example}{Ejercicio}
