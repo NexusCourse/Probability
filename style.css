@@ -469,7 +469,7 @@ a:hover{
     position: absolute;
     width: 350px;
     height: 200px;
-    background: linear-gradient(to right, #62989e 10%, #376167 40%, #0e1d20 100%);
+    background: linear-gradient(to right, #2c3e50 0%, #4b4b4b 100%);
     transform: rotate(-35deg);
     top: -50px;
     left: -100px;
