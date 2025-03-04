@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #081007; /* color del fondo  #18181B  081007*/
+    
+}
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 75px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;  /* color links barra de navegacion*/
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #165b35ec; /* Color posiconamiento sobre link*/
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #165b35ec;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #238b52ec;
+    color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #00e1ff;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+
+
+header .image img{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card{
+    background-color: #14281D;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #254835ec;
+    border-color: #fff;
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #0000007a;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+    color: #5c9c78ec;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.sub-header2{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #ccc;
+}
+
+.temario{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.temario .card{
+    padding: 3rem 2rem;
+    background-color: #14281D;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.temario .card:hover{
+    background-color: #254835ec;
+    border-color: #fff;
+}
+
+.temario .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.temario .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.temario .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.temario .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.temario .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.temario .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.temario .card button:hover{
+    background-color: #092616ec;
+    border-color: #092616ec;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #092616ec;
+    border-color: #092616ec;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #21411b;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* Aqui sigue el codigo para el cu1*/
+section .header2 {
+    margin: 0 auto;
+    background-color: #14281D;
+    color: #fffcdc;
+    width: 550px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2.80rem;
+    font-weight: 700;
+}
+.center{
+    text-align: center;
+    backdrop-filter: blur(0.1rem);
+    -webkit-backdrop-filter: blur(0.1rem);
+    border-radius: 5px;
+    width: 290px;
+    padding: auto;
+    margin: 0.8rem auto;
+    
+}
+.container_cu1{
+    width: 550px;
+    margin: 0 auto;
+    color: #ccc;
+    border-radius: 20px;
+}
+
+section article{
+    transition: all 0.3s ease;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+    margin: 3rem 0;
+    border-radius: 1rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover{
+ box-shadow: 0 0.2rem 0.5rem rgba(250,250,250,0.7);
+}
+
+section article h2 , p {
+    margin: 1rem;
+}
+
+.titulo2{
+    font-size: 14pt;
+ text-align: center;
+ background-color:#14281D;
+ color: fffcdc;
+ border-radius: 7px;
+}
+
+a{
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #306046;
+}
+
+
+/*Aqui sigue el codigo para el equipo*/
+
+.container_eq{
+    width: 255px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #081007 ;
+}
+
+.container_eq .article_eq{
+    transition: all 0.3s ease;
+    background-color: #081007;
+    border-color: #081007;
+    margin: 1.5rem 0;
+    border-radius: 20px;
+    padding: auto;
+    cursor: pointer;
+}
+
+.container_eq .article_eq:hover{
+ box-shadow: 0 0.5rem 0.5rem rgba(250,250,250,0.5);
+}
+
+.container_eq .article_eq h2 , p {
+    margin: 1rem;
+}
+
+.container_eq .flashcards {
+    position: relative;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden ;  
+    text-align: center;  
+    padding: 10px;
+    background: white
+}
+
+.container_eq .flashcards .img {
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.container_eq .flashcards .img img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.container_eq .flashcards span {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(to right, #2c3e50 0%, #4b4b4b 100%);
+    transform: rotate(-35deg);
+    top: -50px;
+    left: -100px;
+}
+
+.container_eq .flashcards h4 {
+    font-size: 19px;
+    color: #1a1919;
+    margin-bottom: 5px;
+}
+
+.container_eq .flashcards h6 {
+    font-size: 13px;
+    color: #001d23;
+}
+
+.container_eq .flashcards p {
+    font-size: 13px;
+    color: #1a161f;
+    margin-top: 10px;
+}
+
+/* PDF VIEW*/
+
+.pdfview {
+    /* Centrado */
+    margin: auto;
+    display: block;
+    /* Tamaño */
+    width: 1000px;
+    height: 100vh;
+    /* Mejorar aspecto */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centerpdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+
+
+/* Ahora para el scroll de recursos*/
+.scroller {
+    display: flex;
+    gap: 10px;
+    animation: scroll 25s linear infinite;
+    animation-delay: calc(25s / -1) ;
+}
+
+.scroller:nth-child(2) {
+    animation: scroll2 25s linear infinite;
+    animation-delay: calc(25s / -2);
+}
+
+.item {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 7px;
+    box-shadow: rgba(255, 255, 255, 0.192) 0px 0px 15px;
+}
+
+/**/
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .temario{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .temario{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
