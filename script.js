@@ -39,6 +39,10 @@ function abrirCu1() {
     window.location.href = "cursos/curso4/cu4.html";
   }
 
+  function abrirCom() {
+    window.location.href = "cursos/complemento/com.html";
+  }
+
   function irAContenido() {
     // Obtiene la URL de la referencia dentro del elemento <li>
     var urlContenido = document.getElementById('link2').querySelector('a').getAttribute('href');

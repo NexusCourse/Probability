@@ -58,7 +58,7 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #616a39; /* Color posiconamiento sobre link*/
+    background-color: #165b35ec; /* Color posiconamiento sobre link*/
     transition: all 0.3s ease;
 }
 
@@ -70,14 +70,14 @@ nav{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #616a39;
+    background-color: #165b35ec;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover{
-    background-color: #707c3f;
+    background-color: #238b52ec;
     color: #fff;
 }
 
@@ -89,7 +89,7 @@ nav{
 
 .blur{
     position: absolute;
-    box-shadow: 0 0 1000px 50px #616a39;
+    box-shadow: 0 0 1000px 50px #00e1ff;
     z-index: -100;
 }
 
@@ -155,7 +155,7 @@ section .header{
 }
 
 .features .card{
-    background-color: #262e23;
+    background-color: #14281D;
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -163,13 +163,13 @@ section .header{
 }
 
 .features .card:hover{
-    background-color: #454d42;
+    background-color: #254835ec;
     border-color: #fff;
 }
 
 .features .card span{
     display: inline-block;
-    background-color: #616a39;
+    background-color: #0000007a;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -195,7 +195,7 @@ section .header{
 }
 
 .features .card a:hover{
-    color: #21711b;
+    color: #5c9c78ec;
 }
 
 .sub-header{
@@ -221,7 +221,7 @@ section .header{
 
 .temario .card{
     padding: 3rem 2rem;
-    background-color: #262e23;
+    background-color: #14281D;
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
@@ -230,7 +230,7 @@ section .header{
 }
 
 .temario .card:hover{
-    background-color: #454d42;
+    background-color: #254835ec;
     border-color: #fff;
 }
 
@@ -273,8 +273,8 @@ section .header{
 }
 
 .temario .card button:hover{
-    background-color: #616a39;
-    border-color: #616a39;
+    background-color: #092616ec;
+    border-color: #092616ec;
 }
 
 footer{
@@ -311,8 +311,8 @@ footer .column .socials a{
 
 footer .column .socials a:hover{
     color: #fff;
-    background-color: #616a39;
-    border-color: #616a39;
+    background-color: #092616ec;
+    border-color: #092616ec;
 }
 
 footer .column h4{
@@ -346,8 +346,8 @@ footer .column > a:hover{
 /* Aqui sigue el codigo para el cu1*/
 section .header2 {
     margin: 0 auto;
-    background-color: #323916;
-    color: beige;
+    background-color: #14281D;
+    color: #fffcdc;
     width: 550px;
     border-radius: 1rem;
     text-align: center;
@@ -393,8 +393,8 @@ section article h2 , p {
 .titulo2{
     font-size: 14pt;
  text-align: center;
- background-color:#323916;
- color: beige;
+ background-color:#14281D;
+ color: fffcdc;
  border-radius: 7px;
 }
 
@@ -405,7 +405,7 @@ a{
     transition: color 0.3s ease;
 }
 a:hover{
-    color: darkolivegreen;
+    color: #306046;
 }
 
 
